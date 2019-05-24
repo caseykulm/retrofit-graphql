@@ -83,7 +83,7 @@ Also __two__ basic top level models, which you don't have to use if you want to 
 
 Suggest using this as is, but if you want to make your own that's not a problem either. The QueryContainerBuilder is used as follows:
 
-_Given a .graphql files such as the following:_
+_Given a .graphql file such as the following:_
 
 ```graphql
 query Trending($type: FeedType!, $offset: Int, $limit: Int) {
@@ -99,6 +99,8 @@ query Trending($type: FeedType!, $offset: Int, $limit: Int) {
   }
 }
 ```
+
+**Note: This file must be in a `/assets/graphql/` directory, or some subdirectory.**
 
 _Adding parameters to the request would be done as follows:_
 
