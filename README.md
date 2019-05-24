@@ -33,6 +33,8 @@ For a detailed example please clone the project and look at the included sample 
 
 Firstly you'll need some to save your GraphQL queries and mutations into .graphql files, You can use this tool to generate your Insomnia workspaces into directories and files [insomnia-graphql-generator](https://github.com/AniTrend/insomnia-graphql-generator) and place these files into your assets folder as shown below:
 
+**Note: Regardless of how you generate them, these files must be in a `/assets/graphql/` directory, or some subdirectory.**
+
 <img src="./images/screenshots/assets_files.png" width=250 />
 
 - __Add the JitPack repository to your build file__
@@ -83,7 +85,7 @@ Also __two__ basic top level models, which you don't have to use if you want to 
 
 Suggest using this as is, but if you want to make your own that's not a problem either. The QueryContainerBuilder is used as follows:
 
-_Given a .graphql files such as the following:_
+_Given a .graphql file such as the following:_
 
 ```graphql
 query Trending($type: FeedType!, $offset: Int, $limit: Int) {
